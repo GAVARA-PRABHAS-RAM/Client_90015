@@ -1,0 +1,156 @@
+.student-list {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    color: #1a1a1a;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+input {
+    width: calc(33% - 20px);
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    background-color: #f8fafc;
+}
+
+input:focus {
+    border-color: #1a1a1a;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transform: translateY(-2px);
+}
+
+button {
+    padding: 12px 24px;
+    margin: 8px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+}
+
+/* Table Styles */
+.student-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: 30px;
+}
+
+.student-table th {
+    padding: 15px 20px;
+    text-align: left;
+    background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.student-table th:first-child {
+    border-radius: 12px 0 0 12px;
+}
+
+.student-table th:last-child {
+    border-radius: 0 12px 12px 0;
+}
+
+.student-table td {
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+}
+
+.student-table tr {
+    transition: all 0.3s ease;
+}
+
+.student-table td:first-child {
+    border-radius: 12px 0 0 12px;
+}
+
+.student-table td:last-child {
+    border-radius: 0 12px 12px 0;
+}
+
+.student-table tr:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Action Buttons in Table */
+.student-table button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    font-size: 14px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+}
+
+.student-table button:nth-child(1) {
+    background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+}
+
+.student-table button:nth-child(2) {
+    background: linear-gradient(135deg, #333333 0%, #4a4a4a 100%);
+}
+
+.student-table button:nth-child(3) {
+    background: linear-gradient(135deg, #4a4a4a 0%, #666666 100%);
+}
+
+.student-table button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .student-list {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    input {
+        width: calc(100% - 20px);
+    }
+
+    .student-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .student-table button {
+        padding: 6px 12px;
+        margin: 2px;
+    }
+}

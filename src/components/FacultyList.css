@@ -1,0 +1,77 @@
+.faculty-list {
+  padding: 30px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faculty-list h2 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.faculty-list input {
+  margin: 8px;
+  padding: 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 300px;
+}
+
+.faculty-list input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+  outline: none;
+}
+
+.faculty-list button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.faculty-list button:hover {
+  background-color: #4338ca;
+  transform: translateY(-2px);
+}
+
+.faculty-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-card button {
+  margin-left: 15px;
+  background-color: #ef4444;
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.faculty-card button:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+}
